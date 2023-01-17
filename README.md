@@ -98,3 +98,6 @@ Painel phpmyadmin:
 ![Logando com novo usuário no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logando.jpg)
 Logado com o novo usuário:
 ![Logado no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logado.jpg)
+
+## Veja o tutorial pelo youtube:  
+<a href="https://youtube.com/@tioolive3144">Assistir tutorial</a>
