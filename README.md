@@ -1,6 +1,10 @@
 # Web-Server-Mysql
 Configurar phpmyadmin pra rodar com apache
 
+## Etapas necessárias:
+<a href="https://github.com/Olliv3r/Web-Server">Configurar apache pra rodar com certificado</a>
+<a href="https://github.com/Olliv3r/Web-Server-Php">Configurar apache pra rodar scripts PHP</a>
+
 ### Etapa 1:
 #### Instalar dependencias
 ```
@@ -92,5 +96,5 @@ termux-open-url https://localhost:8443/phpmyadmin
 
 Painel phpmyadmin:
 ![Logando com novo usuário no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logando.jpg)
-Logando com novo usuário:
+Logado com o novo usuário:
 ![Logado no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logado.jpg)
