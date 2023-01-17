@@ -13,12 +13,12 @@ apt update && apt install apache2 php-apache phpmyadmin mariadb -y
 
 ### Etapa 2:
 #### Criar novo usuário no mysql para acessar o phpmyadmin
-Execute o serviço `mysqld_safe` como root (*não precisa de root, é so o nome de usuário que se chama `root` que ja vem no mysql) pois este usuário tem todas as permissôes no mysql incluindo a de criar usuários novos*)
+Execute o serviço `mysqld_safe` como root (*não precisa de root, é so o nome de usuário que se chama `root` que ja vem no mysql) pois este usuário tem todas as permissôes no mysql incluindo a de criar usuários novos*):
 ```
 mysqld_safe -u root &
 ```
 
-O comando acima irá deixar o `mysqld_safe` rodando em segundo plano, nesse momento entre no mysql como `root` (*so lembrando, não é necessário ter root, este é o nome de usuário que já vem no MySQL com todas as permissôes necessárias*)
+O comando acima irá deixar o `mysqld_safe` rodando em segundo plano, nesse momento entre no mysql como `root` (*so lembrando, não é necessário ter root, este é o nome de usuário que já vem no MySQL com todas as permissôes necessárias*):
 ```
 mysql -u root
 ```
@@ -55,7 +55,7 @@ Pare o mysqld_safe que está rodando em segundo plano:
 pkill mariadb
 ```
 
-Agora execute o serviço `mysqld_safe`  com o novo usuário (*Substitua o `oliver` pelo seu usuário criado*) e der ENTER e digite sua senha quando pedir (*Obs! Insira a senha que você criou anteriormente ao seu usuário*):
+Agora execute o serviço `mysqld_safe` com o novo usuário (*Substitua o `oliver` pelo seu usuário criado*) e der ENTER:
 ```
 mysqld_safe -u oliver &
 ```
