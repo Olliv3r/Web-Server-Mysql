@@ -57,7 +57,7 @@ pkill mariadb
 
 Agora execute o serviço `mysqld_safe`  com o novo usuário (*Substitua o `oliver` pelo seu usuário criado*) e der ENTER e digite sua senha quando pedir (*Obs! Insira a senha que você criou anteriormente ao seu usuário*):
 ```
-mysql -u oliver -p
+mysqld_safe -u oliver &
 ```
 
 Depois de colocar o serviço `mysqld_safe` em execução, vamos fazer 2 alteraçôes nesses 2 arquivos:
