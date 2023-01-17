@@ -23,7 +23,7 @@ O comando acima irá deixar o `mysqld_safe` rodando em segundo plano, nesse mome
 mysql -u root
 ```
 
-Ao executar o comando acima, abrirá o console do MySQL mariadb e execute esses passos para criar o novo usuári
+Ao executar o comando acima, abrirá o console do MySQL mariadb e execute esses passos para criar o novo usuário
 
 Selecione o banco de dados `mysql`
 ```
