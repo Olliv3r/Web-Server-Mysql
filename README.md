@@ -93,4 +93,4 @@ termux-open-url https://localhost:8443/phpmyadmin
 Painel phpmyadmin:
 ![Logando com novo usuário no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logando.jpg)
 Logando com novo usuário:
-![Logado no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logadojpg)
+![Logado no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logado.jpg)
