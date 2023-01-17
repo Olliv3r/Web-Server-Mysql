@@ -2,8 +2,8 @@
 Configurar phpmyadmin pra rodar com apache
 
 ## Etapas necessárias:
-<a href="https://github.com/Olliv3r/Web-Server">Configurar apache pra rodar com certificado</a>
-<a href="https://github.com/Olliv3r/Web-Server-Php">Configurar apache pra rodar scripts PHP</a>
+<a href="https://github.com/Olliv3r/Web-Server">1 - Configurar apache pra rodar com certificado</a>
+<a href="https://github.com/Olliv3r/Web-Server-Php">2 - Configurar apache pra rodar scripts PHP</a>
 
 ### Etapa 1:
 #### Instalar dependencias
