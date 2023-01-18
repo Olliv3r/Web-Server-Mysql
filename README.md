@@ -60,7 +60,7 @@ Agora execute o serviço `mysqld_safe` com o novo usuário (*Substitua o `oliver
 mysqld_safe -u oliver &
 ```
 
-Depois de colocar o serviço `mysqld_safe` em execução, vamos fazer 2 alteraçôes nesses 2 arquivos:
+Depois de colocar o serviço `mysqld_safe` em execução, vamos garantir o acesso ao phpmyadmin, vamos fazer 2 alteraçôes nesses 2 arquivos:
 
 Abra o arquivo `httpd.conf`:
 ```
