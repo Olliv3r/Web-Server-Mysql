@@ -67,7 +67,7 @@ Abra o arquivo `httpd.conf`:
 nano $PREFIX/etc/apache2/httpd.conf
 ```
 
-Dentro desse arquivo digite ` ctr+w` e pesquise por `<Directory> blocks below` e substitua `denied` por `granted` e salve o arquivo com `ctr+x+y`.
+Dentro desse arquivo digite ` ctr+w` e pesquise por `<Directory> blocks below` e substitua `denied` por `granted`:
 
 Ficando de:
 ![Acesso ao phpmyadmin negado](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-denied.jpg)
