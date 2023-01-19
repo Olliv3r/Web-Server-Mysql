@@ -15,7 +15,7 @@ apt update && apt install apache2 php-apache phpmyadmin mariadb -y
 #### Criar novo usuário no mysql para acessar o phpmyadmin
 Execute o serviço `mysqld_safe` como root (*não precisa de root, é so o nome de usuário que se chama `root` que ja vem no mysql) pois este usuário tem todas as permissôes no mysql incluindo a de criar usuários novos*):
 ```
-mysqld_safe -u root &
+cd && mysqld_safe -u root &
 ```
 
 O comando acima irá deixar o `mysqld_safe` rodando em segundo plano, nesse momento entre no mysql como `root` (*so lembrando, não é necessário ter root, este é o nome de usuário que já vem no MySQL com todas as permissôes necessárias*):
