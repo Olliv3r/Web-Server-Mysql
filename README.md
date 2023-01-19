@@ -92,8 +92,19 @@ Ficando de:
 Para:
 ![Alterando de localhost para 127.0.0.1](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-ip.jpg)
 
-A partir de agora o phpmyadmin já está configurando, acesse o seguinte link para acessá-lo:
+A partir de agora o phpmyadmin já está configurando.
 
+Reinicie o apache com se tiver rodando:
+```
+apachectl -k restart
+```
+
+Se tiver parado, inicie com:
+```
+apachectl -k start
+```
+
+acesse o seguinte link para acessá-lo:
 ```
 termux-open-url https://localhost:8443/phpmyadmin
 ```
@@ -102,6 +113,30 @@ Painel phpmyadmin:
 ![Logando com novo usuário no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logando.jpg)
 Logado com o novo usuário:
 ![Logado no phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-logado.jpg)
+
+## Bônus:
+
+### Rodar o servidor web:
+
+Iniciar serviço mysqld_safe (*Substitua o `USUARIO` pelo usuário que voçê criou*):
+```
+mysqld_safe -u USUARIO &
+```
+Iniciar serviço apache:
+```
+apachectl -k start
+```
+
+### Parar o servidor web:
+
+Parar serviço mysqld:
+```
+pkill mariadb
+```
+Parar serviço apache:
+```
+apachectl -k stop
+```
 
 ## Veja o tutorial pelo youtube:  
 <a href="https://youtube.com/@tioolive3144">Assistir tutorial</a>
