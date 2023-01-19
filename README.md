@@ -69,15 +69,15 @@ nano $PREFIX/etc/apache2/httpd.conf
 
 Dentro desse arquivo digite ` ctr+w` e pesquise por `<Directory> blocks below` e substitua `denied` por `granted` e salve o arquivo com `ctr+x+y`.
 
-Com esse arquivo terminamos, salve o arquivo digitando `ctr+x+y` e ENTER
-
 Ficando de:
 ![Acesso ao phpmyadmin negado](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-denied.jpg)
 
 Para:
 ![Permitir acesso ao phpmyadmin](https://github.com/Olliv3r/Web-Server-Mysql/blob/main/media/mysql-granted.jpg)
 
-Abra o arquivo:
+Com esse arquivo terminamos, salve o arquivo digitando `ctr+x+y` e ENTER
+
+Pra finalizar a configuração, abra o arquivo `config.inc.php`:
 ```
 nano $PREFIX/etc/phpmyadmin/config.inc.php
 ```
