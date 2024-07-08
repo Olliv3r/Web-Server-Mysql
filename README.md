@@ -139,4 +139,5 @@ apachectl -k stop
 ```
 
 ## Veja o tutorial pelo youtube:  
-<a href="https://youtube.com/@tioolive3144">Assistir tutorial</a>
+<a href="https://youtube.com/@tioolive">Assistir tutorial</a>
+>[!NOTE] Tutorial foi removido PELO ADM.
