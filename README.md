@@ -138,6 +138,7 @@ Parar serviço apache:
 apachectl -k stop
 ```
 
-## Veja o tutorial pelo youtube:  
+## Veje no YouTube:  
 <a href="https://youtube.com/@tioolive">Assistir tutorial</a>
->[!NOTE] Tutorial foi removido PELO ADM.
+> [!CAUTION]
+> O Tutorial foi removido PELO ADM.
