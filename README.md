@@ -13,17 +13,17 @@ apt update && apt install apache2 php-apache phpmyadmin mariadb -y
 
 ### Etapa 2:
 #### Criar novo usuário no mysql para acessar o phpmyadmin
-Execute o serviço `mysqld_safe` como root (*não precisa de root, é so o nome de usuário que se chama `root` que ja vem no mysql) pois este usuário tem todas as permissôes no mysql incluindo a de criar usuários novos*):
+Execute o serviço `mariadbd-safe` como root (*não precisa de root, é so o nome de usuário que se chama `root` que ja vem no mariadbl) pois este usuário tem todas as permissôes no mariadb incluindo a de criar usuários novos*):
 ```
-cd && mysqld_safe -u root &
-```
-
-O comando acima irá deixar o `mysqld_safe` rodando em segundo plano, nesse momento entre no mysql como `root` (*so lembrando, não é necessário ter root, este é o nome de usuário que já vem no MySQL com todas as permissôes necessárias*):
-```
-mysql -u root
+cd && mariadbd-safe -u root &
 ```
 
-Ao executar o comando acima, abrirá o console do MySQL mariadb e execute esses passos para criar o novo usuário
+O comando acima irá deixar o `mariadbd-safe` rodando em segundo plano, nesse momento entre no mariadb como `root` (*so lembrando, não é necessário ter root, este é o nome de usuário que já vem no MariaDB com todas as permissôes necessárias*):
+```
+mariadb -u root
+```
+
+Ao executar o comando acima, abrirá o console do MariaDB, execute esses passos para criar o novo usuário:
 
 Selecione o banco de dados `mysql`
 ```
@@ -50,17 +50,17 @@ E saia do console do mysql:
 quit
 ```
 
-Pare o mysqld_safe que está rodando em segundo plano:
+Encerre o `mariadbd-safe` que está rodando em segundo plano:
 ```
-pkill mariadb
-```
-
-Agora execute o serviço `mysqld_safe` com o novo usuário (*Substitua o `oliver` pelo seu usuário criado*) e der ENTER:
-```
-mysqld_safe -u oliver &
+pkill -f /data/data/com.termux/files/usr/bin/mariadbd
 ```
 
-Depois de colocar o serviço `mysqld_safe` em execução, vamos garantir o acesso ao phpmyadmin, vamos fazer 2 alteraçôes nesses 2 arquivos:
+Agora execute o serviço `mariadbd-safe` com o novo usuário (*Substitua o `oliver` pelo seu usuário criado*) e der ENTER:
+```
+mariadbd-safe -u oliver &
+```
+
+Depois de colocar o serviço `mariadbd-safe` em execução, vamos garantir o acesso ao phpmyadmin, vamos fazer 2 alteraçôes nesses 2 arquivos:
 
 Abra o arquivo `httpd.conf`:
 ```
@@ -118,9 +118,9 @@ Logado com o novo usuário:
 
 ### Rodar o servidor web:
 
-Iniciar serviço mysqld_safe (*Substitua o `USUARIO` pelo usuário que voçê criou*):
+Iniciar serviço `mariadbd-safe` (*Substitua o `SEU_USUARIO` pelo usuário que voçê criou*):
 ```
-mysqld_safe -u USUARIO &
+mariadbd-safe -u SEU_USUARIO &
 ```
 Iniciar serviço apache:
 ```
@@ -131,7 +131,7 @@ apachectl -k start
 
 Parar serviço mysqld:
 ```
-pkill mariadb
+pkill -f /data/data/com.termux/files/usr/bin/mariadbd
 ```
 Parar serviço apache:
 ```
